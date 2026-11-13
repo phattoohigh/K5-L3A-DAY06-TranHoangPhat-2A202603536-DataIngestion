@@ -23,9 +23,9 @@
 | A | Dev | 6/15 | 8/15 | 721 | 12.57 giây (toàn pipeline) | 0 |
 | B | Dev | 9/15 | 11/15 | 915 | 12.57 giây (toàn pipeline) | 0 |
 | C | Dev | 9/15 | 11/15 | 915 | 12.57 giây (toàn pipeline) | 0 |
-| A | Test v4 | 1/6 | 1/6 | 721 | 11.68 giây (toàn pipeline) | 0 |
-| B | Test v4 | 3/6 | 3/6 | 915 | 11.68 giây (toàn pipeline) | 0 |
-| C | Test v4 | 3/6 | 3/6 | 915 | 11.68 giây (toàn pipeline) | 0 |
+| A | Test | 1/6 | 1/6 | 721 | 11.68 giây (toàn pipeline) | 0 |
+| B | Test | 3/6 | 3/6 | 915 | 11.68 giây (toàn pipeline) | 0 |
+| C | Test | 3/6 | 3/6 | 915 | 11.68 giây (toàn pipeline) | 0 |
 
 Thời gian trên là phép đo một lần trên máy local và bao gồm đọc PDF, chunk, embedding, upsert và query; không nên xem là benchmark hiệu năng tổng quát.
 
