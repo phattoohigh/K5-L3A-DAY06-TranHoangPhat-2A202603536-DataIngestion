@@ -1,0 +1,33 @@
+{
+  "corpus_id": "world-bank-sea-economic-updates-2024",
+  "document_count": 3,
+  "loaded_content_pages": 151,
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "chunk_statistics": {
+    "A": {
+      "chunk_count": 721,
+      "minimum_characters": 111,
+      "maximum_characters": 799,
+      "mean_characters": 727.0624133148405,
+      "median_characters": 794,
+      "total_characters": 524212
+    },
+    "B": {
+      "chunk_count": 915,
+      "minimum_characters": 13,
+      "maximum_characters": 650,
+      "mean_characters": 516.4229508196721,
+      "median_characters": 554,
+      "total_characters": 472527
+    },
+    "C": {
+      "chunk_count": 915,
+      "minimum_characters": 13,
+      "maximum_characters": 650,
+      "mean_characters": 516.4229508196721,
+      "median_characters": 554,
+      "total_characters": 472527
+    }
+  }
+}

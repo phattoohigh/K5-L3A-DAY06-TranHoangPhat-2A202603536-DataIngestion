@@ -1,0 +1,638 @@
+[
+  {
+    "question_id": "VN12",
+    "strategy": "C",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Tài khoản tài chính của Việt Nam năm 2023 ghi nhận mức thâm hụt bao nhiêu phần trăm GDP?",
+    "expected_answer": "0,8% GDP.",
+    "gold_source_ids": [
+      "wb-vnm-taking-stock-2024"
+    ],
+    "gold_pages": [
+      27
+    ],
+    "evidence_quotes": [
+      "the financial account registered a shallow deficit of 0.8 percent of GDP in 2023"
+    ],
+    "filter": {
+      "country": "Viet Nam"
+    },
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "retrieved_count": 3,
+    "hits": [
+      {
+        "chunk_id": "wb-vnm-taking-stock-2024-p27-paragraph-0000-e6d77b135b0840a9",
+        "document_id": "wb-vnm-taking-stock-2024",
+        "source": "starter/data/vietnam_taking_stock_2024.pdf",
+        "page": 27,
+        "text": "On the other hand, the financial account registered a shallow deficit of 0.8 percent of GDP in 2023.\n\nThe deficit was due to the net outflow of short- and medium-term capital (-5.4 percent of GDP) outweighing robust FDI disbursement (4.6 percent of GDP) (Figure 1.9).\n\nPersistent differences between domestic and international interest rates are likely to have contributed to this net capital outflow.\n\nIn the same vein, Viet Nam continued to record significant net errors and omissions (4.5 percent of GDP in 2023), partly reflecting continued unrecorded outflows (Figure 1.7).",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Viet Nam",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 578,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.8950844343698042,
+        "dense_score": 0.7928811311721802,
+        "lexical_score": 0.8385914374920065,
+        "hybrid_score": 0.8950844343698042,
+        "rank": 1,
+        "source_match": true,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true
+      },
+      {
+        "chunk_id": "wb-vnm-taking-stock-2024-p13-paragraph-0001-4a421582c5746caa",
+        "document_id": "wb-vnm-taking-stock-2024",
+        "source": "starter/data/vietnam_taking_stock_2024.pdf",
+        "page": 13,
+        "text": "Meanwhile, average monthly real income growth slowed to an estimated 1.3 percent during 2022–23 compared to 8.3 percent in 2017–19.\n\nA consumer survey recorded a 2023 fall in reported consumer spending from a year earlier on durable goods, including home appliances, personal electronics, and cars 2.\n\nDespite global headwinds, Viet Nam’s external position improved Viet Nam’s external position improved in 2023, underpinned by a large current account surplus.\n\nThe balance of payments (BOP) registered a surplus of 1.3 percent of GDP compared to a deficit of 5.6 percent of GDP in 2022.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Viet Nam",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 587,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.5115298461755324,
+        "dense_score": 0.698794188987692,
+        "lexical_score": 0.521547091860647,
+        "hybrid_score": 0.5115298461755324,
+        "rank": 2,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-vnm-taking-stock-2024-p35-paragraph-0001-cb94244cfafb6ebe",
+        "document_id": "wb-vnm-taking-stock-2024",
+        "source": "starter/data/vietnam_taking_stock_2024.pdf",
+        "page": 35,
+        "text": "The current account is projected to maintain a surplus in 2024, primarily driven by the merchandise trade balance.\n\nThis surplus may decrease in 2025–26 as import growth picks up with the gradual recovery in private consumption and in imported intermediate inputs to exports.\n\nFDI inflows are expected to remain stable in the short to medium terms, reflecting foreign investors’ sustained interest in Viet Nam.\n\n41 While overall GDP growth slowed in 2023, quarterly dynamics showed a shallow recovery in exports and industrial production starting in the third quarter.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Viet Nam",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 568,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.44043248743315944,
+        "dense_score": 0.7070779800415039,
+        "lexical_score": 0.388127037301804,
+        "hybrid_score": 0.44043248743315944,
+        "rank": 3,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      }
+    ],
+    "retrieval_query": "What financial account deficit as a percentage of GDP did Viet Nam record in 2023?"
+  },
+  {
+    "question_id": "VN13",
+    "strategy": "C",
+    "split": "test",
+    "type": "condition",
+    "question": "Đến cuối tháng 12/2023, Việt Nam đã giải ngân bao nhiêu đầu tư công và đạt bao nhiêu phần trăm kế hoạch được Quốc hội phê duyệt?",
+    "expected_answer": "580 nghìn tỷ VND và 73,5% kế hoạch.",
+    "gold_source_ids": [
+      "wb-vnm-taking-stock-2024"
+    ],
+    "gold_pages": [
+      32
+    ],
+    "evidence_quotes": [
+      "reaching VND580 trillion by the end of December (33.3 percent higher than 2022) and 73.5 percent of the plan approved by the National Assembly in 2023"
+    ],
+    "filter": null,
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "retrieved_count": 3,
+    "hits": [
+      {
+        "chunk_id": "wb-vnm-taking-stock-2024-p14-paragraph-0003-43b6d9068e34437e",
+        "document_id": "wb-vnm-taking-stock-2024",
+        "source": "starter/data/vietnam_taking_stock_2024.pdf",
+        "page": 14,
+        "text": "Despite the pick-up in capital budget implementation, procedural bottlenecks in land acquisition, resettlement, and public procurement, amongst others, led to under-execution of overall public investment, with disbursement remaining about a quarter below the investment budget approved by the National Assembly.\n\nViet Nam’s economic growth prospects are positive, with risks to the forecast broadly balanced Viet Nam’s economy is forecast to grow by 5.5 percent in 2024.\n\nThis projection assumes a continued recovery of manufacturing exports in 2024 (3.5 percent real growth y/y), reflecting a gradual improvement in global demand.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Viet Nam",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 631,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.569422203944186,
+        "dense_score": 0.7642888426780755,
+        "lexical_score": 0.33757262145259387,
+        "hybrid_score": 0.569422203944186,
+        "rank": 1,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-vnm-taking-stock-2024-p30-paragraph-0001-16d102dc213cec47",
+        "document_id": "wb-vnm-taking-stock-2024",
+        "source": "starter/data/vietnam_taking_stock_2024.pdf",
+        "page": 30,
+        "text": "27 Government report to the Standing Committee of the National Assembly in October 2023 on implementation of Economic Support Package under Resolution No.\n\n43/2022/QH15.\n\n28 In 2022, Viet Nam’s international reserves lost US$22.7 billion, as the SBV intervened in the FX market to defend the value of the Vietnamese dong, decreasing from a peak of US$110 billion (Q4-2021) to just above US$87 billion (Q4-2022).\n\n29 Data on balance of payments components is only available up to the third quarter of 2023.\n\nFourth quarter data will be available in March 2024.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Viet Nam",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 559,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.45545474538753705,
+        "dense_score": 0.75183875847824,
+        "lexical_score": 0.20435208119969742,
+        "hybrid_score": 0.45545474538753705,
+        "rank": 2,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-vnm-taking-stock-2024-p30-paragraph-0000-32ca785fa7b3da1c",
+        "document_id": "wb-vnm-taking-stock-2024",
+        "source": "starter/data/vietnam_taking_stock_2024.pdf",
+        "page": 30,
+        "text": "26 The interest rate subsidy program is part of the Socio-Economic Recovery and Development Program approved by the National Assembly in early 2022.\n\nThe interest rate subsidy program, with an allocated budget of US$1.7 billion, provides an interest subsidy of 2 percent for targeted businesses to recover from pandemic scarring.\n\nIn March 2023, the government approved a US$5.1 billion credit program to promote social housing developments in Viet Nam.\n\nCredit is provided by four State-owned commercial banks with preferential interest rates for developers and home buyers.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Viet Nam",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 575,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.3662235062576066,
+        "dense_score": 0.6912048643109295,
+        "lexical_score": 0.27217519867538525,
+        "hybrid_score": 0.3662235062576066,
+        "rank": 3,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      }
+    ],
+    "retrieval_query": "How much public investment did Viet Nam disburse by the end of December 2023 and what percentage of the National Assembly approved plan was achieved?"
+  },
+  {
+    "question_id": "ID12",
+    "strategy": "C",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Trong bốn tháng đầu năm 2024, thu ngân sách Indonesia giảm bao nhiêu và chi tiêu tăng bao nhiêu so với cùng kỳ?",
+    "expected_answer": "Thu giảm 7,7%; chi tăng 10,9%.",
+    "gold_source_ids": [
+      "wb-idn-economic-prospects-2024"
+    ],
+    "gold_pages": [
+      19
+    ],
+    "evidence_quotes": [
+      "Government revenues declined by 7.7 percent yoy as the effect of commodity windfalls subsided. At the same time, spending grew by 10.9 percent"
+    ],
+    "filter": {
+      "country": "Indonesia"
+    },
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "retrieved_count": 3,
+    "hits": [
+      {
+        "chunk_id": "wb-idn-economic-prospects-2024-p29-paragraph-0009-9964807950073fc4",
+        "document_id": "wb-idn-economic-prospects-2024",
+        "source": "starter/data/indonesia_economic_prospects_2024.pdf",
+        "page": 29,
+        "text": "All these external shocks could have implications on Indonesia’s growth through a sharper decline in the terms of trade, resulting possibly in lower revenues and a tighter fiscal position.\n\nDomestically, rising social spending with no additional revenues and expenditure efficiency measures could deepen the fiscal deficit while slow implementation of structural reforms could have implication on productivity and growth.\n\n23 Including the extension of cash transfer and rice aid program to the first half of 2024.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Indonesia",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 514,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.5740327370378384,
+        "dense_score": 0.7025208054470649,
+        "lexical_score": 0.34466574928898225,
+        "hybrid_score": 0.5740327370378384,
+        "rank": 1,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-idn-economic-prospects-2024-p14-paragraph-0002-a9a3a1993b6bdbcb",
+        "document_id": "wb-idn-economic-prospects-2024",
+        "source": "starter/data/indonesia_economic_prospects_2024.pdf",
+        "page": 14,
+        "text": "Indonesia’s GDP growth remains resilient.\n\nThe economy grew by 5 percent in 2023 and by 5.1 percent in the first quarter of 2024 (Q1-24).\n\nThis is close to double the world average at 2.6 percent and higher than the middle-income country average at 4.5 percent.\n\nAs consumer confidence remained strong and supported by declining inflation, robust private A.\n\nEconomic Update consumption accounted for more than 60 percent of 2023 growth (Figure A.1).\n\nPublic spending in 2023 was softened by delays in budget execution but accelerated in Q1-24 with increased election and social spending.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Indonesia",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 588,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.44079260032597956,
+        "dense_score": 0.694563948460096,
+        "lexical_score": 0.19878726935081334,
+        "hybrid_score": 0.44079260032597956,
+        "rank": 2,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-idn-economic-prospects-2024-p12-paragraph-0001-9ed1ba7708db0eed",
+        "document_id": "wb-idn-economic-prospects-2024",
+        "source": "starter/data/indonesia_economic_prospects_2024.pdf",
+        "page": 12,
+        "text": "Indonesian firms also exhibit lower average sales and employment figures than those in Türkiye, Mexico, and India.\n\nPotential growth had been declining due to weaker labor input, human capital formation, and productivity growth.\n\nWhile investment and labor previously fueled growth, the post-pandemic period has seen a moderation, with total factor productivity (TFP) particularly affected.\n\nTFP growth in the 2010s was half that of the 2000s.\n\nThe decline in TFP and human capital aligns with lower labor productivity growth (see Indonesia Economic Prospects June 2023 for more details).",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Indonesia",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 588,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.39792469630659216,
+        "dense_score": 0.6981533405963588,
+        "lexical_score": 0.1061733744490873,
+        "hybrid_score": 0.39792469630659216,
+        "rank": 3,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      }
+    ],
+    "retrieval_query": "By how much did Indonesia's government revenues decline and spending grow year-on-year in January to April 2024?"
+  },
+  {
+    "question_id": "ID13",
+    "strategy": "C",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "Chi tiêu bảo trợ xã hội của Indonesia năm 2024 dự kiến cao hơn bao nhiêu phần trăm so với phân bổ ngân sách ban đầu?",
+    "expected_answer": "Cao hơn 7,8%.",
+    "gold_source_ids": [
+      "wb-idn-economic-prospects-2024"
+    ],
+    "gold_pages": [
+      20
+    ],
+    "evidence_quotes": [
+      "social protection spending is expected to be 7.8 percent higher than the initial budget allocation for 2024"
+    ],
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "retrieved_count": 3,
+    "hits": [
+      {
+        "chunk_id": "wb-idn-economic-prospects-2024-p20-paragraph-0002-f10de00eeeab7c4a",
+        "document_id": "wb-idn-economic-prospects-2024",
+        "source": "starter/data/indonesia_economic_prospects_2024.pdf",
+        "page": 20,
+        "text": "As a result, social protection spending is expected to be 7.8 percent higher than the initial budget allocation for 2024 (Figure A.16).11 In anticipation, MoF extended the “automatic adjustment” mechanism that locks 5 percent of the allocated budget from each ministry/agency as contingency fund for shifting expenditure priorities.12 After a material drop at the start of the year, pressures on energy subsidies are re-emerging amid geopolitical tensions and recent currency depreciation.\n\nFor January-to-April, subsidies dropped by 16.4 percent.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Indonesia",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 547,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.8450392029652661,
+        "dense_score": 0.7305100399559773,
+        "lexical_score": 0.8185183326690901,
+        "hybrid_score": 0.8450392029652661,
+        "rank": 1,
+        "source_match": true,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true
+      },
+      {
+        "chunk_id": "wb-idn-economic-prospects-2024-p20-paragraph-0000-ff856ea125c0a8d4",
+        "document_id": "wb-idn-economic-prospects-2024",
+        "source": "starter/data/indonesia_economic_prospects_2024.pdf",
+        "page": 20,
+        "text": "Summary A.1.\n\nRecent Economic Developments A.2.\n\nThe Policy StanceA.5.\n\nPolicy Priorities A.3.\n\nStructural TrendsA.4.\n\nOutlook and RisksB.1.\n\nIntroductionB.2.\n\nPerformance of the Private SectorB.3.\n\nTackling Regualatory Uncertainty, the Next ChallengeB.4.\n\nTakeaways and Policy Recommendations Unleashing Indonesia’s Business Potential 11 Social protection spending is estimated to reach IDR 536 trillion in 2024 (2.4 percent of GDP), compared to an allocated budget of IDR 497 trillion (2.2 percent of GDP).\n\n12 The ministry of finance has used this mechanism for emergency funds since 2022.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Indonesia",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 592,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.6006556629112294,
+        "dense_score": 0.7463421074355918,
+        "lexical_score": 0.38562409678650683,
+        "hybrid_score": 0.6006556629112294,
+        "rank": 2,
+        "source_match": true,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-idn-economic-prospects-2024-p32-paragraph-0001-2bebca0b6858d12c",
+        "document_id": "wb-idn-economic-prospects-2024",
+        "source": "starter/data/indonesia_economic_prospects_2024.pdf",
+        "page": 32,
+        "text": "Amid rising fiscal pressures, redeploying spending from less effective programs to boosting spending on social protection is important for human capital formation and growth.\n\nDespite the recent increase in social protection spending, there remain expenditure gaps to provide social protection that serves all Indonesians and across their lifecycle (Table A.1).\n\nCompared to recent expenditure trends, an additional spending of around 0.5 percent of GDP is needed to close this gap.\n\nExisting fiscal constraints imply that expanding coverage will have to be gradual and thus requires prioritization and sequencing of different programs.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Indonesia",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 636,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.46856555966508195,
+        "dense_score": 0.7431389979289768,
+        "lexical_score": 0.19392439485847865,
+        "hybrid_score": 0.46856555966508195,
+        "rank": 3,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      }
+    ],
+    "retrieval_query": "How much higher was Indonesia's 2024 social protection spending expected to be than the initial budget allocation?"
+  },
+  {
+    "question_id": "TH12",
+    "strategy": "C",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Nợ công của Thailand vào cuối tháng 3/2024 bằng bao nhiêu phần trăm GDP?",
+    "expected_answer": "63,4% GDP.",
+    "gold_source_ids": [
+      "wb-tha-economic-monitor-2024"
+    ],
+    "gold_pages": [
+      23
+    ],
+    "evidence_quotes": [
+      "Public debt rose to 63.4 percent of GDP at the end of March 2024"
+    ],
+    "filter": {
+      "country": "Thailand"
+    },
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "retrieved_count": 3,
+    "hits": [
+      {
+        "chunk_id": "wb-tha-economic-monitor-2024-p23-paragraph-0001-511f59a582e2b71b",
+        "document_id": "wb-tha-economic-monitor-2024",
+        "source": "starter/data/thailand_economic_monitor_2024.pdf",
+        "page": 23,
+        "text": "Public debt rose to 63.4 percent of GDP at the end of March 2024, 22 percentage points higher than the pre -pandemic period ( Figure 23).\n\nThe public debt is assessed to remain fiscally sustainable with low levels of foreign currency denominated debt at 1.2 percent of total debt and relatively low cost of funding.\n\nThe impact o f the potential implementation of the digital wallet program on sovereign bonds remains relatively muted.\n\nThe 10 -year government bond yield remains relatively stable in the first half of FY24 consistent with most ASEAN peers (Figure 24).",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Thailand",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 569,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.7086578887797302,
+        "dense_score": 0.7259144566680682,
+        "lexical_score": 0.9391512512124586,
+        "hybrid_score": 0.7086578887797302,
+        "rank": 1,
+        "source_match": true,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true
+      },
+      {
+        "chunk_id": "wb-tha-economic-monitor-2024-p8-paragraph-0006-41c5c95cd2c0af9c",
+        "document_id": "wb-tha-economic-monitor-2024",
+        "source": "starter/data/thailand_economic_monitor_2024.pdf",
+        "page": 8,
+        "text": "Thailand faces the mounting challenge of reconciling fiscal sustainability and short-term stimulus.\n\nThe government projected that public debt will rise to 68.6 percent of GDP by 2028 as spending needs rise.4 Pro-growth consumption-stimulating measures such as the Digital Wallet have added to this pressure.\n\nTo enhance fiscal resilience amid rising spending needs, Thailand can start by focusing on more targeted social assistance and transfers to effectively supp ort vulnerable households and poverty alleviation.\n\nIn addition, Thailand has room to raise tax revenue, promote equity, create fiscal space and accelerate investment.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Thailand",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 634,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.5857316841890655,
+        "dense_score": 0.8190150505010803,
+        "lexical_score": 0.3626641295216393,
+        "hybrid_score": 0.5857316841890655,
+        "rank": 2,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-tha-economic-monitor-2024-p7-paragraph-0006-3914b43e4b287663",
+        "document_id": "wb-tha-economic-monitor-2024",
+        "source": "starter/data/thailand_economic_monitor_2024.pdf",
+        "page": 7,
+        "text": "Household debt stood at elevated level even compared to advanced economies (91.6 percent of GDP as of Q4 2023) and the highest among ASEAN peers.\n\nThe composition of household debt in Thailand warrants attention due to the large share of uncollateralized lending (44 percent of GDP).\n\nHigher interest rates could strain households’ ability to service debt.\n\nThe fiscal stance has become less expansionary as capital spending lapsed due to the delayed budget.\n\nThe FY24 budget of THB 3.48 trillion (18.9 percent of GDP, cash basis) took effect in late April, after a seven-month delay.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Thailand",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 584,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.5030579511951009,
+        "dense_score": 0.8158473129317998,
+        "lexical_score": 0.2486539891946215,
+        "hybrid_score": 0.5030579511951009,
+        "rank": 3,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      }
+    ],
+    "retrieval_query": "What was Thailand's public debt as a percentage of GDP at the end of March 2024?"
+  },
+  {
+    "question_id": "TH13",
+    "strategy": "C",
+    "split": "test",
+    "type": "condition",
+    "question": "Ngân sách tài khóa năm 2024 của Thailand có quy mô bao nhiêu và tương đương bao nhiêu phần trăm GDP?",
+    "expected_answer": "3,48 nghìn tỷ baht, tương đương 18,7% GDP.",
+    "gold_source_ids": [
+      "wb-tha-economic-monitor-2024"
+    ],
+    "gold_pages": [
+      24
+    ],
+    "evidence_quotes": [
+      "The approved budget, amounting to 3.48 trillion baht (18.7 percent of GDP"
+    ],
+    "filter": null,
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "retrieved_count": 3,
+    "hits": [
+      {
+        "chunk_id": "wb-tha-economic-monitor-2024-p21-paragraph-0006-99de04346a775b90",
+        "document_id": "wb-tha-economic-monitor-2024",
+        "source": "starter/data/thailand_economic_monitor_2024.pdf",
+        "page": 21,
+        "text": "However, Thailand's decline was more pronounced than that of its ASEAN peers, due to delays in FY24 budget approval, which led to minimal capital spending (0.04 percent of GDP) and moderated recurrent spending.\n\nHowever, the FY24 Budget of THB 3.48 trillion (18.9 percent of GDP, cash basis) took effect in late-April, after a seven -month delay.\n\nA ccelerating budget execution could boost economic activity for the remainder of 2024.\n\n15 See Ferrari, Aurora & Masetti, Oliver & Ren, Jiemin, 2018.\n\n\"Interest rate caps: theory and the practice,\" Policy Research Working Paper Series 8398, The World Bank.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Thailand",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 605,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.5822414490747607,
+        "dense_score": 0.734991192817688,
+        "lexical_score": 0.3572945370380934,
+        "hybrid_score": 0.5822414490747607,
+        "rank": 1,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-tha-economic-monitor-2024-p7-paragraph-0007-98d48e7c71ee890d",
+        "document_id": "wb-tha-economic-monitor-2024",
+        "source": "starter/data/thailand_economic_monitor_2024.pdf",
+        "page": 7,
+        "text": "In the first half of FY24 (October 2023 - March 2024), the central government's fiscal deficit (GFS basis) declined to 3.5 percent of GDP, a notable decline from the 7.1 percent in the same period last year.\n\nThe general government structural balance in F Y23-24 showed a smaller deficit due to less expansionary policies, mirroring trends among ASEAN peers as governments prioritized fiscal consolidation in the wake of the pandemic .\n\nHowever, Thailand's decline was more pronounced than that of its ASEAN peers, due to delays in FY24 budget approval, which led to minimal capital spending (0.04 percent of GDP) and moderated recurrent spending.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Thailand",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 647,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.5033791083835784,
+        "dense_score": 0.7121872901916504,
+        "lexical_score": 0.3572945370380934,
+        "hybrid_score": 0.5033791083835784,
+        "rank": 2,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      },
+      {
+        "chunk_id": "wb-tha-economic-monitor-2024-p11-paragraph-0000-8931ddc4fd90670a",
+        "document_id": "wb-tha-economic-monitor-2024",
+        "source": "starter/data/thailand_economic_monitor_2024.pdf",
+        "page": 11,
+        "text": "Executive Summary THAILAND ECONOMIC MONITOR | July 2024 vi Recent Developments and Medium-Term Outlook Figure ES 1: The Thai economy slowed due to the contraction in government consumption and total investment Figure ES 2: …Thailand’s post-pandemic recovery lagged behind ASEAN peers (Percentage-point contribution to real GDP growth, year-on-year) (GDP Index, seasonally adjusted, Q4 2019 = 100) Source: NESDC.\n\nNote: Change in inventories include statistical discrepancies; 2023 Q4 is estimated.\n\nSource: CEIC; World Bank staff calculations.",
+        "metadata": {
+          "year": 2024,
+          "topic": "economic_growth",
+          "country": "Thailand",
+          "overlap": 0,
+          "chunking": "by_paragraph",
+          "language": "English",
+          "max_size": 650,
+          "char_count": 543,
+          "document_type": "country_economic_update"
+        },
+        "score": 0.3976606981366328,
+        "dense_score": 0.718726200981511,
+        "lexical_score": 0.1598609801933356,
+        "hybrid_score": 0.3976606981366328,
+        "rank": 3,
+        "source_match": true,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false
+      }
+    ],
+    "retrieval_query": "What was the size of Thailand's approved FY2024 budget and what percentage of GDP did it represent?"
+  }
+]

@@ -1,0 +1,31 @@
+sample_id,document_id,page,strategy,score_0_to_2,reason,selection_rule,reviewer
+COH01,wb-vnm-taking-stock-2024,12,A,1,"Starts inside a sentence; the figures are understandable but the subject depends on preceding text","Four fixed Viet Nam pages, three Indonesia pages, and three Thailand pages selected before scoring; middle chunk on each page",author_with_AI_assistance
+COH01,wb-vnm-taking-stock-2024,12,B,2,"Sentence boundaries are preserved and the economic statements are self-contained",same_positions,author_with_AI_assistance
+COH01,wb-vnm-taking-stock-2024,12,C,2,"Identical chunk to B; sentence boundaries are preserved",same_positions,author_with_AI_assistance
+COH02,wb-vnm-taking-stock-2024,20,A,1,"Begins mid-idea with private consumption and requires preceding context",same_positions,author_with_AI_assistance
+COH02,wb-vnm-taking-stock-2024,20,B,2,"Contains complete sentences about industrial production and PMI",same_positions,author_with_AI_assistance
+COH02,wb-vnm-taking-stock-2024,20,C,2,"Identical chunk to B and understandable independently",same_positions,author_with_AI_assistance
+COH03,wb-vnm-taking-stock-2024,26,A,1,"Begins in the middle of the explanation of the current-account surplus",same_positions,author_with_AI_assistance
+COH03,wb-vnm-taking-stock-2024,26,B,1,"Mostly coherent but the first sentence loses the words 'balance of' at the chunk boundary",same_positions,author_with_AI_assistance
+COH03,wb-vnm-taking-stock-2024,26,C,1,"Identical chunk to B with the same small boundary loss",same_positions,author_with_AI_assistance
+COH04,wb-vnm-taking-stock-2024,33,A,1,"Starts with a continuation phrase and ends in references",same_positions,author_with_AI_assistance
+COH04,wb-vnm-taking-stock-2024,33,B,2,"Keeps complete public-debt sentences together despite trailing citations",same_positions,author_with_AI_assistance
+COH04,wb-vnm-taking-stock-2024,33,C,2,"Identical chunk to B and preserves the complete claims",same_positions,author_with_AI_assistance
+COH05,wb-idn-economic-prospects-2024,9,A,1,"Starts mid-paragraph and contains an inserted Executive Summary header",same_positions,author_with_AI_assistance
+COH05,wb-idn-economic-prospects-2024,9,B,1,"Sentence units are retained but an extracted page header interrupts one sentence",same_positions,author_with_AI_assistance
+COH05,wb-idn-economic-prospects-2024,9,C,1,"Identical chunk to B with the same extraction artifact",same_positions,author_with_AI_assistance
+COH06,wb-idn-economic-prospects-2024,18,A,1,"Starts with the second half of a liquidity explanation",same_positions,author_with_AI_assistance
+COH06,wb-idn-economic-prospects-2024,18,B,2,"Defines both liquidity concepts and reports ratios in complete sentences",same_positions,author_with_AI_assistance
+COH06,wb-idn-economic-prospects-2024,18,C,2,"Identical chunk to B and independently understandable",same_positions,author_with_AI_assistance
+COH07,wb-idn-economic-prospects-2024,22,A,1,"Begins mid-sentence about investors",same_positions,author_with_AI_assistance
+COH07,wb-idn-economic-prospects-2024,22,B,2,"Complete sequence explaining the SRBI instrument",same_positions,author_with_AI_assistance
+COH07,wb-idn-economic-prospects-2024,22,C,2,"Identical chunk to B and preserves the explanation",same_positions,author_with_AI_assistance
+COH08,wb-tha-economic-monitor-2024,7,A,1,"Begins with 'However' and depends on the prior subsidy statement",same_positions,author_with_AI_assistance
+COH08,wb-tha-economic-monitor-2024,7,B,2,"Complete sentences preserve inflation and monetary-policy context",same_positions,author_with_AI_assistance
+COH08,wb-tha-economic-monitor-2024,7,C,2,"Identical chunk to B and coherent independently",same_positions,author_with_AI_assistance
+COH09,wb-tha-economic-monitor-2024,20,A,1,"Visual sidebar text and prose are mixed, weakening readability",same_positions,author_with_AI_assistance
+COH09,wb-tha-economic-monitor-2024,20,B,2,"Keeps a complete explanation of household-debt vulnerability",same_positions,author_with_AI_assistance
+COH09,wb-tha-economic-monitor-2024,20,C,2,"Identical chunk to B and retains the full idea",same_positions,author_with_AI_assistance
+COH10,wb-tha-economic-monitor-2024,23,A,1,"Starts mid-sentence before the public-debt assessment",same_positions,author_with_AI_assistance
+COH10,wb-tha-economic-monitor-2024,23,B,2,"Complete public-debt claim and supporting context remain together",same_positions,author_with_AI_assistance
+COH10,wb-tha-economic-monitor-2024,23,C,2,"Identical chunk to B and self-contained",same_positions,author_with_AI_assistance

@@ -1,0 +1,19 @@
+strategy,question_id,score_0_to_2,reason,reviewer
+A,VN12,2,"Top-1 contains the complete financial-account deficit evidence and correct page",author_with_AI_assistance
+A,VN13,1,"Retrieved context discusses public-investment under-execution but omits the requested amount and plan percentage",author_with_AI_assistance
+A,ID12,0,"Top-3 does not contain the Indonesia revenue and spending figures",author_with_AI_assistance
+A,ID13,1,"A chunk from the correct page is retrieved but does not preserve the full 7.8 percent evidence",author_with_AI_assistance
+A,TH12,1,"Retrieved summary discusses public debt but not the requested March 2024 observed value",author_with_AI_assistance
+A,TH13,1,"Retrieved chunks discuss the delayed budget but omit the approved budget size and GDP share",author_with_AI_assistance
+B,VN12,2,"Top-1 contains complete evidence with source and page",author_with_AI_assistance
+B,VN13,1,"Relevant public-investment context is present but the requested figures are absent",author_with_AI_assistance
+B,ID12,1,"Revenue and fiscal context is retrieved but the requested 7.7 and 10.9 percent figures are absent",author_with_AI_assistance
+B,ID13,2,"Top-1 contains the complete 7.8 percent social-protection evidence",author_with_AI_assistance
+B,TH12,2,"Top-1 contains the complete 63.4 percent public-debt evidence",author_with_AI_assistance
+B,TH13,1,"Budget-delay context is present but the requested 3.48 trillion and 18.7 percent values are absent",author_with_AI_assistance
+C,VN12,2,"Top-1 contains complete evidence with source and page",author_with_AI_assistance
+C,VN13,1,"Relevant public-investment context is present but the requested figures are absent",author_with_AI_assistance
+C,ID12,1,"Country filter is respected but the precise revenue and spending figures are absent",author_with_AI_assistance
+C,ID13,2,"Top-1 contains complete evidence and respects the Indonesia filter",author_with_AI_assistance
+C,TH12,2,"Top-1 contains complete evidence and respects the Thailand filter",author_with_AI_assistance
+C,TH13,1,"Budget context is present but the requested amount and GDP share are absent",author_with_AI_assistance

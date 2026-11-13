@@ -1,0 +1,76 @@
+{
+  "corpus_id": "world-bank-sea-economic-updates-2024",
+  "title": "World Bank 2024 Economic Updates for Viet Nam, Indonesia, and Thailand",
+  "description": "Three official World Bank country economic reports from 2024, selected for controlled retrieval experiments using country, year, and topic metadata.",
+  "accessed_at": "2026-11-13",
+  "page_count_rule": "Count substantive executive-summary and report-body pages. Exclude covers, copyright pages, tables of contents, abbreviation-only pages, blank pages, section dividers, and terminal back covers. Physical PDF page numbers are used for traceability.",
+  "total_physical_pages": 183,
+  "total_included_content_pages": 151,
+  "documents": [
+    {
+      "source_id": "wb-vnm-taking-stock-2024",
+      "title": "Taking Stock April 2024: Promoting Innovative Entrepreneurship",
+      "country": "Viet Nam",
+      "year": 2024,
+      "topic": "economic_growth",
+      "document_type": "country_economic_update",
+      "language": "English",
+      "source_path_or_url": "starter/data/vietnam_taking_stock_2024.pdf",
+      "landing_page_url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099435404222425028",
+      "download_url": "https://documents1.worldbank.org/curated/en/099435404222425028/pdf/IDU1c5664f6e1c35c146ca1855f13d13e3b79c24.pdf",
+      "license_or_permission": "World Bank copyright notice permits use subject to its stated rights and licenses terms; queries are directed to pubrights@worldbank.org. No blanket Creative Commons claim is made for this file.",
+      "license_evidence_page": 4,
+      "physical_page_count": 60,
+      "included_page_ranges": [
+        "12-18",
+        "20-39",
+        "41-57"
+      ],
+      "included_content_page_count": 44,
+      "sha256": "5ffc22e1f7555f8022bc25e6cd44f371c0096f9840cf6c4c6dd8b22a2c6dadc2"
+    },
+    {
+      "source_id": "wb-idn-economic-prospects-2024",
+      "title": "Indonesia Economic Prospects: Unleashing Indonesia's Business Potential - June 2024",
+      "country": "Indonesia",
+      "year": 2024,
+      "topic": "economic_growth",
+      "document_type": "country_economic_update",
+      "language": "English",
+      "source_path_or_url": "starter/data/indonesia_economic_prospects_2024.pdf",
+      "landing_page_url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099062124085019387",
+      "download_url": "https://documents1.worldbank.org/curated/en/099062124085019387/pdf/P1795561b546840d6197b5181ca07a690ed.pdf",
+      "license_or_permission": "The report states that it may be reproduced in whole or in part for noncommercial purposes with full attribution; third-party images may require additional permission.",
+      "license_evidence_page": 2,
+      "physical_page_count": 53,
+      "included_page_ranges": [
+        "9-12",
+        "14-33",
+        "35-52"
+      ],
+      "included_content_page_count": 42,
+      "sha256": "2045f6306434161cc1f54a1dfb5d82016f5a3c3a812a532127f08147bb340656"
+    },
+    {
+      "source_id": "wb-tha-economic-monitor-2024",
+      "title": "Thailand Economic Monitor: Unlocking the Growth Potential of Secondary Cities",
+      "country": "Thailand",
+      "year": 2024,
+      "topic": "economic_growth",
+      "document_type": "country_economic_update",
+      "language": "English",
+      "source_path_or_url": "starter/data/thailand_economic_monitor_2024.pdf",
+      "landing_page_url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099062924133030977",
+      "download_url": "https://documents1.worldbank.org/curated/en/099062924133030977/pdf/P50100914f725005f1b9211803e7e17020a.pdf",
+      "license_or_permission": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO), with attribution and third-party-content conditions stated in the report.",
+      "license_evidence_page": 2,
+      "physical_page_count": 70,
+      "included_page_ranges": [
+        "3",
+        "6-69"
+      ],
+      "included_content_page_count": 65,
+      "sha256": "2c52e2600a385725c7dd47afc4b051adb91086c6655f0d8c23ee59bcf9146d7e"
+    }
+  ]
+}

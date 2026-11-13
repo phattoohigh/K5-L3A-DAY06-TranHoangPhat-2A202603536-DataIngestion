@@ -1,6 +1,6 @@
 # Starter · PostgreSQL + pgvector
 
-Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
+Bộ khởi động **tùy chọn** cho lab cá nhân. Trong bài nộp này, các module trong `src/` đã được hoàn thiện để đọc corpus World Bank, tạo embedding local, lưu pgvector, chạy ba strategy và xuất trace/metrics. Docker Compose tạo PostgreSQL + pgvector local.
 
 ## Cấu trúc
 
@@ -13,12 +13,12 @@ starter/
 ├── scripts/check_setup.py # kiểm tra kết nối và extension (đã chạy được)
 ├── src/
 │   ├── models.py          # cấu trúc dữ liệu mẫu
-│   ├── ingestion.py       # TODO: đọc / chuẩn hóa tài liệu
-│   ├── chunking.py        # TODO: chia chunk
-│   ├── embeddings.py      # TODO: chọn model API hoặc local
-│   ├── store.py           # TODO: lưu vector, metadata và filter
-│   ├── evaluation.py      # TODO: chấm truy xuất, lưu trace
-│   └── run.py             # TODO: kết nối các bước thành pipeline
+│   ├── ingestion.py       # đọc, chuẩn hóa, loại header/footer lặp
+│   ├── chunking.py        # fixed-size và sentence-aware chunking
+│   ├── embeddings.py      # Sentence Transformers local
+│   ├── store.py           # pgvector, metadata và filter
+│   ├── evaluation.py      # chấm truy xuất, lưu trace
+│   └── run.py             # pipeline và hybrid reranking
 ├── data/                  # bạn tự chuẩn bị corpus được phép sử dụng
 └── results/               # lưu kết quả của bạn
 ```
@@ -60,6 +60,6 @@ docker compose -p day6_student_starter stop
 2. Hoàn thiện từng hàm TODO trong `src/`. Lưu ID tài liệu, nguồn, trang/vị trí và ít nhất một trường filter có ích.
 3. Xây ít nhất ba cấu hình; ví dụ A fixed-size, B theo đoạn, C như B nhưng có filter. Cần cùng corpus, model và benchmark; nạp lại không nhân đôi và xử lý chunk cũ khi dữ liệu đổi.
 4. Tự viết ít nhất 20 câu hỏi kèm evidence, tách dev/test trước khi thử theo [BENCHMARK.md](../BENCHMARK.md). Lưu trace top-3 và báo cáo đủ năm tiêu chí.
-5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
+5. Chạy `BENCHMARK_SPLIT=dev RESULTS_DIRECTORY=results/dev python -m src.run` hoặc thay `dev` bằng `test` từ thư mục `starter/`.
 
 Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.

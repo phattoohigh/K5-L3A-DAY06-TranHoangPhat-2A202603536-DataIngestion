@@ -45,3 +45,51 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+## Bài làm - Trần Hoàng Phát (2A202603536)
+
+### Corpus và cấu hình
+
+- Ba báo cáo World Bank 2024 cho Viet Nam, Indonesia và Thailand; 151 trang nội dung.
+- Embedding local: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (384 chiều).
+- PostgreSQL + pgvector, cosine exact search, hybrid reranking top-20.
+- A: fixed 800/overlap 100; B: sentence-aware 650; C: B + country filter.
+
+### Cách chạy
+
+```bash
+cd starter
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env
+python scripts/download_corpus.py
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py
+```
+
+Chạy dev hoặc test vào thư mục riêng:
+
+```bash
+BENCHMARK_SPLIT=dev RESULTS_DIRECTORY=results/dev python -m src.run
+BENCHMARK_SPLIT=test RESULTS_DIRECTORY=results/test python -m src.run
+```
+
+Để chạy offline sau khi model đã được tải một lần:
+
+```bash
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
+BENCHMARK_SPLIT=dev RESULTS_DIRECTORY=results/dev python -m src.run
+```
+
+### Artifacts
+
+- Manifest: `data/manifest.json`
+- Benchmark cuối: `benchmark/questions.json`
+- Experiment log: `artifacts/experiment_log.csv`
+- Hybrid ablation: `artifacts/hybrid_ablation.csv`
+- Dev/test metrics và top-3 trace: `starter/results/dev/`, `starter/results/test/`
+- Audit thủ công: `starter/results/coherence_audit.csv`, `metadata_audit.csv`, `grounding_audit.csv`
+- Báo cáo cá nhân: `report/individual/2A202603536_TranHoangPhat.md`
+
+Kết quả cuối: B/C đạt dev Evidence Hit@3 `11/15`; trên holdout v4, B/C đạt Hit@1 `3/6` và Evidence Hit@3 `3/6`. Test v4 được chạy một lần sau khi khóa cấu hình hybrid trên dev.

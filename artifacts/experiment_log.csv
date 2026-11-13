@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size_word_boundary_plus_hybrid,800,100,"document_id;source;page;country;year;topic;document_type;language",none,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,"Fixed windows provide a stable baseline but may split semantic units",6/15,8/15,1/6,1/6,"Hybrid reranking uses top-20 dense candidates with dense weight 0.35 selected on dev"
+B,sentence_aware_plus_hybrid,650,0,"document_id;source;page;country;year;topic;document_type;language",none,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,"Sentence-aware chunks should improve evidence coherence and retrieval",9/15,11/15,3/6,3/6,"Chunk size and hybrid weight selected on dev only; final v4 holdout run once"
+C,sentence_aware_plus_hybrid,650,0,"document_id;source;page;country;year;topic;document_type;language",country_when_provided,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,"Applying a trusted country filter should improve scope compliance",9/15,11/15,3/6,3/6,"Same chunks and vectors as B; country filter compliance 9/9 reviewed records"

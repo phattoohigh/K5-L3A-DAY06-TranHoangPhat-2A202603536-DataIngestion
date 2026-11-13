@@ -1,0 +1,108 @@
+{
+  "trace_count": 45,
+  "groups": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "question_count": 15,
+      "hit_at_1_count": 6,
+      "hit_at_1_denominator": 15,
+      "hit_at_1_rate": 0.4,
+      "evidence_hit_at_3_count": 8,
+      "evidence_hit_at_3_denominator": 15,
+      "evidence_hit_at_3_rate": 0.5333333333333333
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "question_count": 15,
+      "hit_at_1_count": 9,
+      "hit_at_1_denominator": 15,
+      "hit_at_1_rate": 0.6,
+      "evidence_hit_at_3_count": 11,
+      "evidence_hit_at_3_denominator": 15,
+      "evidence_hit_at_3_rate": 0.7333333333333333
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "question_count": 15,
+      "hit_at_1_count": 9,
+      "hit_at_1_denominator": 15,
+      "hit_at_1_rate": 0.6,
+      "evidence_hit_at_3_count": 11,
+      "evidence_hit_at_3_denominator": 15,
+      "evidence_hit_at_3_rate": 0.7333333333333333
+    }
+  ],
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "similarity_metric": "cosine",
+  "search_mode": "exact",
+  "retrieval_mode": "hybrid_dense_lexical",
+  "hybrid_candidates": 20,
+  "hybrid_dense_weight": 0.35,
+  "cost": 0,
+  "benchmark_split": "dev",
+  "selection_rule": "Prioritize dev Evidence Hit@3, then manual grounding, Hit@1, coherence, and resource use.",
+  "strategy_parameters": {
+    "A": {
+      "chunk_size": 800,
+      "overlap": 100
+    },
+    "B": {
+      "max_size": 650,
+      "filter": false
+    },
+    "C": {
+      "max_size": 650,
+      "filter": true
+    }
+  },
+  "chunk_statistics": {
+    "A": {
+      "chunk_count": 721,
+      "minimum_characters": 111,
+      "maximum_characters": 799,
+      "mean_characters": 727.0624133148405,
+      "median_characters": 794,
+      "total_characters": 524212
+    },
+    "B": {
+      "chunk_count": 915,
+      "minimum_characters": 13,
+      "maximum_characters": 650,
+      "mean_characters": 516.4229508196721,
+      "median_characters": 554,
+      "total_characters": 472527
+    },
+    "C": {
+      "chunk_count": 915,
+      "minimum_characters": 13,
+      "maximum_characters": 650,
+      "mean_characters": 516.4229508196721,
+      "median_characters": 554,
+      "total_characters": 472527
+    }
+  },
+  "timings_seconds": {
+    "ingestion": 2.3933800830272958,
+    "chunking": 0.012764125014655292,
+    "embedding": {
+      "A": 4.093190458021127,
+      "B": 4.807688458939083,
+      "C": 0.0
+    },
+    "vector_store_upsert": {
+      "A": 0.05710637499578297,
+      "B": 0.042312291101552546,
+      "C": 0.03751895797904581
+    },
+    "queries": {
+      "A": 0.2202504170127213,
+      "B": 0.21475112496409565,
+      "C": 0.21398354100529104
+    },
+    "total": 12.56700425001327
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "benchmark_id": "world-bank-sea-economic-updates-2024-v4-final",
+  "created_at": "2026-11-13",
+  "description": "Final benchmark with the frozen 15-question development set and a v4 six-question holdout selected from previously unused evidence pages after hybrid retrieval was fixed.",
+  "split_policy": {
+    "dev_count": 15,
+    "test_count": 6,
+    "test_locked_before_experiments": true,
+    "prior_test_exposed": true,
+    "selection_policy": "The final hybrid configuration was selected only on the 15 dev questions. The v4 holdout is run once without subsequent tuning."
+  },
+  "prior_holdouts": "Earlier test splits were exposed and are treated as pilots; they are not used as the final independent result.",
+  "questions": [
+    {
+      "id": "VN01",
+      "split": "dev",
+      "type": "direct",
+      "question": "Tăng trưởng GDP thực của Việt Nam năm 2023 là bao nhiêu?",
+      "retrieval_query": "What was Viet Nam's real GDP growth rate in 2023?",
+      "expected_answer": "5%, giảm từ 8%.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 20,
+      "evidence_quote": "Real GDP growth decelerated to 5 percent from 8 percent in 2023",
+      "filter": null
+    },
+    {
+      "id": "VN02",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Tiêu dùng tư nhân tăng trưởng ở mức nào trong năm 2023?",
+      "retrieval_query": "At what rate did private consumption grow in Viet Nam in 2023?",
+      "expected_answer": "3,5% so với cùng kỳ.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 20,
+      "evidence_quote": "Private consumption slowed sharply to 3.5 percent (y/y) in 2023",
+      "filter": {
+        "country": "Viet Nam"
+      }
+    },
+    {
+      "id": "VN03",
+      "split": "dev",
+      "type": "direct",
+      "question": "Kinh tế Việt Nam tăng trưởng bao nhiêu trong quý I năm 2024?",
+      "retrieval_query": "What growth did Viet Nam register in the first quarter of 2024 as the economy showed signs of recovery?",
+      "expected_answer": "5,7% so với cùng kỳ.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 21,
+      "evidence_quote": "The economy registered 5.7 percent (y/y) growth.",
+      "filter": null
+    },
+    {
+      "id": "VN04",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Tăng trưởng thu nhập thực bình quân tháng trong giai đoạn 2022-2023 đã giảm xuống mức nào?",
+      "retrieval_query": "To what level did average monthly real income growth slow during 2022-2023?",
+      "expected_answer": "Khoảng 1,3%.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 22,
+      "evidence_quote": "average monthly real income growth slowed to an estimated 1.3 percent",
+      "filter": null,
+      "gold_pages": [
+        13,
+        22
+      ]
+    },
+    {
+      "id": "VN05",
+      "split": "dev",
+      "type": "condition",
+      "question": "Có bao nhiêu doanh nghiệp bất động sản Việt Nam đã giải thể trong giai đoạn suy giảm được báo cáo?",
+      "retrieval_query": "How many real estate enterprises in Viet Nam were dissolved during the reported downturn?",
+      "expected_answer": "Hơn 2.400 doanh nghiệp.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 24,
+      "evidence_quote": "more than 2,400 real estate enterprises were dissolved",
+      "filter": null
+    },
+    {
+      "id": "ID01",
+      "split": "dev",
+      "type": "direct",
+      "question": "GDP Indonesia tăng trưởng bao nhiêu trong quý I năm 2024?",
+      "retrieval_query": "How much did Indonesia's GDP grow in the first quarter of 2024?",
+      "expected_answer": "5,1%.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 14,
+      "evidence_quote": "The economy grew by 5 percent in 2023 and by 5.1 percent in the first quarter of 2024",
+      "filter": null
+    },
+    {
+      "id": "ID02",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Thành phần nào đóng góp hơn 60% tăng trưởng kinh tế Indonesia năm 2023?",
+      "retrieval_query": "Which component accounted for more than 60 percent of Indonesia's economic growth in 2023?",
+      "expected_answer": "Tiêu dùng tư nhân.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 14,
+      "evidence_quote": "accounted for more than 60 percent of 2023 growth",
+      "filter": null
+    },
+    {
+      "id": "ID03",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Lạm phát toàn phần vào tháng 5 năm 2024 là bao nhiêu?",
+      "retrieval_query": "What was headline inflation in May 2024?",
+      "expected_answer": "2,8% so với cùng kỳ.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 14,
+      "evidence_quote": "Headline inflation accelerated to 2.8 percent yoy in May",
+      "filter": {
+        "country": "Indonesia"
+      }
+    },
+    {
+      "id": "ID04",
+      "split": "dev",
+      "type": "condition",
+      "question": "Indonesia nâng hạn ngạch nhập khẩu gạo năm 2024 lên bao nhiêu để kiềm chế lạm phát thực phẩm?",
+      "retrieval_query": "To what amount did Indonesia raise its 2024 rice import quota to contain food inflation?",
+      "expected_answer": "4,1 triệu tấn.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 15,
+      "evidence_quote": "increasing the quota for rice imports for 2024 to 4.1 million tons",
+      "filter": null,
+      "gold_pages": [
+        9,
+        15
+      ]
+    },
+    {
+      "id": "ID05",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Đầu tư danh mục của Indonesia ghi nhận dòng vốn ròng như thế nào trong quý I năm 2024?",
+      "retrieval_query": "What net portfolio investment flow did Indonesia record in the first quarter of 2024?",
+      "expected_answer": "Dòng vốn ròng chảy ra bằng 0,5% GDP.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 16,
+      "evidence_quote": "recorded a net outflow of 0.5 percent of GDP in Q1-24",
+      "filter": null
+    },
+    {
+      "id": "TH01",
+      "split": "dev",
+      "type": "direct",
+      "question": "GDP Thailand tăng trưởng bao nhiêu trong quý I năm 2024?",
+      "retrieval_query": "What was Thailand's subdued GDP growth in Q1 2024 amid internal and external headwinds?",
+      "expected_answer": "1,5%.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 14,
+      "evidence_quote": "GDP growth remained subdued at 1.5 percent in Q1 2024.",
+      "filter": null
+    },
+    {
+      "id": "TH02",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Thành phần cầu nào là động lực chính của tăng trưởng Thailand trong quý I năm 2024 và tăng bao nhiêu?",
+      "retrieval_query": "Which domestic demand component proved to be a key driver of Thailand's Q1 2024 growth and by how much did it grow?",
+      "expected_answer": "Tiêu dùng tư nhân, tăng 6,9%.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 14,
+      "evidence_quote": "private consumption (6.9 percent), proved to be a key driver",
+      "filter": null
+    },
+    {
+      "id": "TH03",
+      "split": "dev",
+      "type": "direct",
+      "question": "Lượng khách du lịch đến Thailand vào tháng 3 năm 2024 đạt bao nhiêu so với mức trước đại dịch?",
+      "retrieval_query": "What percentage of pre-pandemic levels did Thailand's tourist arrivals reach in March 2024?",
+      "expected_answer": "86% mức trước đại dịch.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 14,
+      "evidence_quote": "Thailand’s tourism arrivals reached only 86 percent of pre - pandemic levels in March.",
+      "filter": null
+    },
+    {
+      "id": "TH04",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Cán cân vãng lai của Thailand trong quý I năm 2024 thặng dư bao nhiêu so với GDP?",
+      "retrieval_query": "What current account surplus as a share of GDP did Thailand record in the first quarter of 2024?",
+      "expected_answer": "2,2% GDP.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 16,
+      "evidence_quote": "the current account maintained a surplus at 2.2 percent of GDP",
+      "filter": null,
+      "gold_pages": [
+        16,
+        17
+      ]
+    },
+    {
+      "id": "TH05",
+      "split": "dev",
+      "type": "condition",
+      "question": "Dòng vốn FDI vào Thailand năm 2023 giảm bao nhiêu và còn tương đương bao nhiêu phần trăm GDP?",
+      "retrieval_query": "By how much did FDI inflows to Thailand decline in 2023 and what share of GDP did they represent?",
+      "expected_answer": "Giảm 74%, còn 0,5% GDP.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 17,
+      "evidence_quote": "declined by 74 percent to 0.5 percent of GDP",
+      "filter": null
+    },
+    {
+      "id": "VN12",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Tài khoản tài chính của Việt Nam năm 2023 ghi nhận mức thâm hụt bao nhiêu phần trăm GDP?",
+      "retrieval_query": "What financial account deficit as a percentage of GDP did Viet Nam record in 2023?",
+      "expected_answer": "0,8% GDP.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 27,
+      "evidence_quote": "the financial account registered a shallow deficit of 0.8 percent of GDP in 2023",
+      "filter": {
+        "country": "Viet Nam"
+      }
+    },
+    {
+      "id": "VN13",
+      "split": "test",
+      "type": "condition",
+      "question": "Đến cuối tháng 12/2023, Việt Nam đã giải ngân bao nhiêu đầu tư công và đạt bao nhiêu phần trăm kế hoạch được Quốc hội phê duyệt?",
+      "retrieval_query": "How much public investment did Viet Nam disburse by the end of December 2023 and what percentage of the National Assembly approved plan was achieved?",
+      "expected_answer": "580 nghìn tỷ VND và 73,5% kế hoạch.",
+      "gold_source_id": "wb-vnm-taking-stock-2024",
+      "gold_page": 32,
+      "evidence_quote": "reaching VND580 trillion by the end of December (33.3 percent higher than 2022) and 73.5 percent of the plan approved by the National Assembly in 2023",
+      "filter": null
+    },
+    {
+      "id": "ID12",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Trong bốn tháng đầu năm 2024, thu ngân sách Indonesia giảm bao nhiêu và chi tiêu tăng bao nhiêu so với cùng kỳ?",
+      "retrieval_query": "By how much did Indonesia's government revenues decline and spending grow year-on-year in January to April 2024?",
+      "expected_answer": "Thu giảm 7,7%; chi tăng 10,9%.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 19,
+      "evidence_quote": "Government revenues declined by 7.7 percent yoy as the effect of commodity windfalls subsided. At the same time, spending grew by 10.9 percent",
+      "filter": {
+        "country": "Indonesia"
+      }
+    },
+    {
+      "id": "ID13",
+      "split": "test",
+      "type": "paraphrase",
+      "question": "Chi tiêu bảo trợ xã hội của Indonesia năm 2024 dự kiến cao hơn bao nhiêu phần trăm so với phân bổ ngân sách ban đầu?",
+      "retrieval_query": "How much higher was Indonesia's 2024 social protection spending expected to be than the initial budget allocation?",
+      "expected_answer": "Cao hơn 7,8%.",
+      "gold_source_id": "wb-idn-economic-prospects-2024",
+      "gold_page": 20,
+      "evidence_quote": "social protection spending is expected to be 7.8 percent higher than the initial budget allocation for 2024",
+      "filter": null
+    },
+    {
+      "id": "TH12",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Nợ công của Thailand vào cuối tháng 3/2024 bằng bao nhiêu phần trăm GDP?",
+      "retrieval_query": "What was Thailand's public debt as a percentage of GDP at the end of March 2024?",
+      "expected_answer": "63,4% GDP.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 23,
+      "evidence_quote": "Public debt rose to 63.4 percent of GDP at the end of March 2024",
+      "filter": {
+        "country": "Thailand"
+      }
+    },
+    {
+      "id": "TH13",
+      "split": "test",
+      "type": "condition",
+      "question": "Ngân sách tài khóa năm 2024 của Thailand có quy mô bao nhiêu và tương đương bao nhiêu phần trăm GDP?",
+      "retrieval_query": "What was the size of Thailand's approved FY2024 budget and what percentage of GDP did it represent?",
+      "expected_answer": "3,48 nghìn tỷ baht, tương đương 18,7% GDP.",
+      "gold_source_id": "wb-tha-economic-monitor-2024",
+      "gold_page": 24,
+      "evidence_quote": "The approved budget, amounting to 3.48 trillion baht (18.7 percent of GDP",
+      "filter": null
+    }
+  ]
+}
